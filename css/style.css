@@ -6,13 +6,22 @@
 
 body {
     background-color: white;
-    padding: 10px;
+    color: #838b8b;
+}
+
+header {
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
+    float: right;
 }
 
 li {
@@ -23,10 +32,17 @@ a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 500;
-    padding: 12px 8px;
+    padding: 12px 15px;
     text-decoration: none;
     color: gray;
     text-transform: uppercase;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
 }
 
 h1 {
@@ -35,16 +51,26 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.name {
+    color: #c0d6e4;
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 500;
     color: gray;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 90px;
 }
 
-.desciption {
+.description {
     font-family: 'Lato', sans-serif;
-    padding: 10px;
+    padding: 10px 0;
+}
+
+.home {
+    display: grid;
+    place-items: center;
 }
