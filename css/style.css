@@ -52,7 +52,7 @@ h1 {
 }
 
 .name {
-    color: #c0d6e4;
+    color: #f9f14f;
 }
 
 h2 {
@@ -61,16 +61,21 @@ h2 {
     font-weight: 500;
     color: gray;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     padding-top: 90px;
 }
 
-.description {
+.text {
     font-family: 'Lato', sans-serif;
     padding: 10px 0;
 }
 
-.home {
+.contactText {
+    height: 300px;
+}
+
+.home,
+.contactText {
     display: grid;
     place-items: center;
 }
@@ -91,4 +96,11 @@ a:hover {
 
 .none {
     display: none;
+}
+
+.email {
+    color: #f9f14f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 15px 0;
 }
