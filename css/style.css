@@ -75,12 +75,12 @@ h2 {
     padding: 10px 0;
 }
 
-.contactText {
+.contact-text {
     height: 300px;
 }
 
 .home,
-.contactText {
+.contact-text {
     display: grid;
     place-items: center;
 }
@@ -109,6 +109,19 @@ a:hover {
 
 .none {
     display: none;
+}
+
+.skills {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-logo {
+    height: 100px;
+    padding: 15px;
 }
 
 .email {
