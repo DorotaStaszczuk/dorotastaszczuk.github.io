@@ -9,6 +9,12 @@ body {
     color: #838b8b;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 header {
     position: fixed;
     display: block;
@@ -46,7 +52,6 @@ a {
 section {
     position: relative;
     height: 100vh;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -54,6 +59,19 @@ h1 {
     font-size: 53px;
     padding: 20px 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+    height: calc(100% - 164px);
+}
+.content > div {
+    width: 60vw;
+}
+
+.home {
+    height: 100%;
 }
 
 .name {
@@ -66,23 +84,12 @@ h2 {
     font-weight: 500;
     color: gray;
     text-align: center;
-    padding-bottom: 30px;
     padding-top: 90px;
 }
 
 .text {
     font-family: 'Lato', sans-serif;
     padding: 10px 0;
-}
-
-.contact-text {
-    height: 300px;
-}
-
-.home,
-.contact-text {
-    display: grid;
-    place-items: center;
 }
 
 .jump {
@@ -112,7 +119,6 @@ a:hover {
 }
 
 .skills {
-    padding-top: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -129,4 +135,5 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     padding: 15px 0;
+    text-align: center;
 }
