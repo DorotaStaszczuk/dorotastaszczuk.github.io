@@ -72,7 +72,7 @@ h1 {
 .content {
     display: grid;
     place-items: center;
-    height: calc(100% - 164px);
+    height: calc(100% - 300px);
 }
 .content > div {
     width: 60vw;
@@ -92,7 +92,7 @@ h2 {
     font-weight: 500;
     color: gray;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 160px;
 }
 
 .text {
