@@ -118,7 +118,18 @@ h2 {
     height: 30px;
     position: relative;
     left: 45px;
-    bottom: 30px;
+    animation: move 2s ease infinite;
+}
+
+@keyframes move {
+    from {
+        bottom: 25px;
+        opacity: 0%;
+    }
+    to {
+        bottom: 45px;
+        opacity: 100%;
+    }
 }
 
 .jump:hover,
