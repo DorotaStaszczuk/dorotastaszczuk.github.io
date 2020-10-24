@@ -35,7 +35,7 @@ header {
     margin: 15px 30px;
 }
 
-ul {
+nav > ul {
     list-style-type: none;
     margin: 0;
     padding: 25px;
@@ -50,36 +50,46 @@ a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 500;
-    padding: 12px 15px;
     text-decoration: none;
     color: gray;
     text-transform: uppercase;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+nav a {
+    padding: 12px 15px;
 }
 
 section {
     position: relative;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
+}
+
+.home {
+    padding: 250px 0;
+}
+
+#home {
+    height: 100vh;
 }
 
 h1 {
     font-size: 60px;
-    padding: 20px 0;
     font-family: 'Baloo Da 2', cursive;
     color: #2a524b;
+    font-display: block;
 }
 
 .content {
-    display: grid;
-    place-items: center;
-    height: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .content > div {
     width: 60vw;
-}
-
-.home {
-    height: 100%;
 }
 
 .name {
@@ -93,6 +103,12 @@ h2 {
     color: gray;
     text-align: center;
     padding-top: 160px;
+    padding-bottom: 100px;
+}
+
+.home-text {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
 }
 
 .text {
@@ -153,11 +169,68 @@ a:hover {
     padding: 15px;
 }
 
+.content > .portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+    justify-content: space-evenly;
+}
+
+.project .text {
+    padding-bottom: 30px;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+h3 {
+    color: #62d6c7;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+}
+
+.project-image {
+    width: calc(60vw / 2);
+}
+
+.project-text {
+    width: calc(60vw / 2);
+}
+
 .email {
     color: #62d6c7;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 25px;
-    padding: 15px 0;
+    padding: 30px 0 70px 0;
     text-align: center;
+}
+
+#contact {
+    padding-bottom: 130px;
+}
+
+footer {
+    padding: 15px 0;
+    -webkit-box-shadow: 0px -11px 25px -14px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px -11px 25px -14px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px -11px 25px -14px rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    padding: 13px 0 10px 0;
 }
