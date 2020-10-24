@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <title>Portfolio</title>
+        <title>Dorota Staszczuk - Portfolio</title>
     </head>
     <body>
         <header>
@@ -30,7 +30,7 @@
                 <div class="content home">
                     <div>
                         <h1>Hi! I'm <span class="name">Dorota</span></h1>
-                        <div class="text">
+                        <div class="home-text">
                             I'm a junior developer located in Warsaw, Poland. I'm looking for new job opportunities.
                         </div>
                     </div>
@@ -74,7 +74,71 @@
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="content">
-                    <div class="portfolio"></div>
+                    <div class="portfolio">
+                        <div class="project">
+                            <div class="project-text">
+                                <h3>Banking Application with Angular</h3>
+                                <p class="description text">
+                                    Banking application that includes: main site view with account history, transfer,
+                                    sms token, success and failure modals. Responsive web design done with mobile first
+                                    approach. Firebase Realtime Database used. Firebase provides a real-time database
+                                    and back-end as a service.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://github.com/DorotaStaszczuk/BankingApplicationWithAngular"
+                                            target="_blank"
+                                            >code</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://dorotastaszczuk.github.io/BankingApplicationWithAngular/"
+                                            target="_blank"
+                                            >live demo</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <img class="project-image" />
+                        </div>
+                        <div class="project reverse">
+                            <div class="project-text">
+                                <h3>Silver Fox</h3>
+                                <p class="description text">
+                                    Multi-page application. Functionalities: creating new account, logging in and out,
+                                    adding photos, editing profile, removing photos, removing account. Main site with
+                                    photo gallery of all registered users (sorted by the time and date added - newest
+                                    first). Logged out user doesn’t have full access to the site.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/DorotaStaszczuk/SilverFox" target="_blank">code</a>
+                                    </li>
+                                    <li><a target="_blank">live demo</a></li>
+                                </ul>
+                            </div>
+                            <img class="project-image" />
+                        </div>
+                        <div class="project">
+                            <div class="project-text">
+                                <h3>Calculator</h3>
+                                <p class="description text">A simple JavaScript calculator with basic operations.</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/DorotaStaszczuk/Calculator" target="_blank">code</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://dorotastaszczuk.github.io/Calculator/" target="_blank"
+                                            >live demo</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <img class="project-image" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -90,7 +154,12 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p class="text text-centered">Copyright © 2020 DS</p>
+            <a href="https://github.com/DorotaStaszczuk/dorotastaszczuk.github.io" target="_blank"
+                >View site code on github</a
+            >
+        </footer>
         <script src="portfolio.js"></script>
     </body>
 </html>
