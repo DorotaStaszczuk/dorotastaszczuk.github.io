@@ -61,6 +61,24 @@ nav a {
     padding: 12px 15px;
 }
 
+.icons-container {
+    position: fixed;
+    top: 400px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.icons-container a {
+    padding-top: 35px;
+}
+
+.icon {
+    height: 20px;
+    max-width: 25px;
+}
+
 section {
     position: relative;
     height: 100%;
