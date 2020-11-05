@@ -187,7 +187,6 @@ a:hover {
 .content > .portfolio {
     display: flex;
     flex-direction: column;
-    width: 95vw;
 }
 
 .project {
@@ -204,10 +203,16 @@ a:hover {
 .project-text {
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
 }
 
 .reverse {
     flex-direction: row-reverse;
+}
+
+.reverse .project-text {
+    padding-right: 0;
+    padding-left: 30px;
 }
 
 h3 {
@@ -218,6 +223,11 @@ h3 {
 
 .project-image {
     width: calc(60vw / 2);
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
 }
 
 .project-text {
