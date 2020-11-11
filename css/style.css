@@ -111,6 +111,19 @@ h1 {
     color: #62d6c7;
 }
 
+button {
+    background: linear-gradient(325deg, rgba(182,245,190,1) 0%, rgba(96,219,208,1) 100%);
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+button a {
+    padding: 0;
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
