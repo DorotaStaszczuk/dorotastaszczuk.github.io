@@ -115,13 +115,14 @@ button {
     background: linear-gradient(325deg, rgba(182,245,190,1) 0%, rgba(96,219,208,1) 100%);
     border-radius: 8px;
     border: none;
-    padding: 15px;
     text-align: center;
-    margin-top: 15px;
+    margin: 15px 15px 0 0;
+    min-width: 100px;
 }
 
 button a {
-    padding: 0;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 h2 {
@@ -204,9 +205,12 @@ a:hover {
 
 .project {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 100px;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    padding: 20px;
     justify-content: space-evenly;
+    border: solid #CADBD4 2px;
+    border-radius: 8px;
 }
 
 .project .text {
@@ -216,16 +220,6 @@ a:hover {
 .project-text {
     display: flex;
     flex-direction: column;
-    padding-right: 30px;
-}
-
-.reverse {
-    flex-direction: row-reverse;
-}
-
-.reverse .project-text {
-    padding-right: 0;
-    padding-left: 30px;
 }
 
 h3 {
@@ -235,16 +229,16 @@ h3 {
 }
 
 .project-image {
-    width: calc(60vw / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-image img {
     width: 100%;
+    max-width: 1000px;
     height: auto;
-}
-
-.project-text {
-    width: calc(60vw / 2);
+    margin-bottom: 40px;
 }
 
 .email {
