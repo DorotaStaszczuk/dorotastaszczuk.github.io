@@ -95,6 +95,7 @@ h1 {
     font-family: 'Baloo Da 2', cursive;
     color: #2a524b;
     font-display: block;
+    line-height: 1.0;
 }
 
 .content {
@@ -191,11 +192,12 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .skills-logo {
     height: 75px;
-    margin: 25px;
+    margin: 35px;
 }
 
 .content > .portfolio {
@@ -255,7 +257,8 @@ h3 {
     background-color: honeydew;
     padding: 7px 10px;
     border-radius: 5px;
-   margin-right: 10px;
+    margin-right: 10px;
+    line-height: 3.0;
 }
 
 .email {
