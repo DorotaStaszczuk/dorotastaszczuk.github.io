@@ -9,6 +9,10 @@ body {
     color: gray;
 }
 
+body .home {
+    color: #CADBD4;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -20,14 +24,15 @@ header {
     display: block;
     width: 100%;
     z-index: 99;
-    background-color: #d7e9e2;
     transition: box-shadow 1000ms ease, -webkit-box-shadow 1000ms ease, -moz-box-shadow 1000ms ease;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .header-scrolled {
     -webkit-box-shadow: 0px 11px 25px -14px rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0px 11px 25px -14px rgba(0, 0, 0, 0.23);
     box-shadow: 0px 11px 25px -14px rgba(0, 0, 0, 0.23);
+    background-color: #d7e9e2;
 }
 
 .logo {
@@ -64,15 +69,20 @@ nav a {
 .icons-container {
     position: fixed;
     bottom: 90px;
-    left: 50px;
+    left: 35px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     z-index: 5;
+    padding: 10px 0;
 }
 
 .icons-container a {
-    padding: 0;
-    margin-top: 35px;
+    padding: 15px;
+}
+
+.icons-container .behance {
+    padding-bottom: 10px;
 }
 
 .icon {
@@ -86,18 +96,6 @@ section {
     z-index: 1;
 }
 
-.home {
-    padding: 250px 0;
-}
-
-h1 {
-    font-size: 60px;
-    font-family: 'Baloo Da 2', cursive;
-    color: #2a524b;
-    font-display: block;
-    line-height: 1.0;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -105,11 +103,29 @@ h1 {
     align-items: center;
 }
 .content > div {
-    width: 60vw;
+    max-width: 60vw;
 }
 
-.name {
-    color: #62d6c7;
+.home {
+    padding: 250px 0;
+    background-image: url("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home div {
+    background-color: rgba(0,0,0,0.3);
+    padding: 15px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Baloo Da 2', cursive;
+    color:  #62d6c7;
+    font-display: block;
+    line-height: 1.0;
 }
 
 button {
