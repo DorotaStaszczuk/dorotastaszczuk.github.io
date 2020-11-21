@@ -37,7 +37,12 @@ header {
 
 .logo {
     height: 33px;
-    margin: 15px 30px;
+}
+
+.logo-link {
+    margin: 15px 45px;
+    padding: 0;
+    display: inline-block;
 }
 
 nav > ul {
@@ -78,7 +83,8 @@ nav a {
 }
 
 .icons-container a {
-    padding: 15px;
+    padding: 0;
+    margin: 15px;
 }
 
 .icons-container .behance {
@@ -99,7 +105,6 @@ section {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .content > div {
@@ -169,7 +174,7 @@ h2 {
 .jump {
     float: right;
     position: fixed;
-    bottom: 90px;
+    bottom: 100px;
     right: 15px;
     z-index: 99;
     cursor: pointer;
@@ -179,23 +184,28 @@ h2 {
 .arrow {
     height: 30px;
     position: relative;
-    left: 45px;
+    left: 38px;
+    bottom: 5px;
     animation: move 2s ease infinite;
 }
 
 @keyframes move {
     from {
-        bottom: 25px;
+        bottom: 10px;
         opacity: 0%;
     }
     to {
-        bottom: 45px;
+        bottom: 30px;
         opacity: 100%;
     }
 }
 
-.jump:hover,
 a:hover {
+    color: #CADBD4;
+}
+
+.jump:hover,
+.header-scrolled a:hover {
     color: #2a524b;
 }
 
@@ -319,5 +329,40 @@ footer a {
 
     li {
         display: block;
+    }
+
+    .logo-link {
+        margin: 15px 20px;
+    }
+
+    .jump {
+        display: none;
+    }
+
+    footer p {
+        margin-top: 60px;
+    }
+
+    .icons-container {
+        width: 100vw;
+        position: relative;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        bottom: -80px;
+        left: 0;
+        z-index: 99;
+    }
+
+    .icons-container .behance {
+        padding-bottom: 0;
+    }
+
+    #contact {
+        padding-bottom: 0;
+    }
+
+    .content > div {
+        max-width: 85vw;
     }
 }
