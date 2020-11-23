@@ -200,13 +200,14 @@ h2 {
     }
 }
 
-a:hover {
-    color: #CADBD4;
-}
-
 .jump:hover,
+a:hover,
 .header-scrolled a:hover {
     color: #2a524b;
+}
+
+nav a:hover {
+    color: #CADBD4;
 }
 
 .none {
@@ -364,5 +365,10 @@ footer a {
 
     .content > div {
         max-width: 85vw;
+    }
+
+    h2 {
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
 }
