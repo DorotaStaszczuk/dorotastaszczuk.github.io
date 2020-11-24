@@ -147,6 +147,14 @@ button a {
     display: inline-block;
 }
 
+button:hover {
+    filter: saturate(2) brightness(0.90);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
