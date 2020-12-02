@@ -133,25 +133,22 @@ h1 {
     line-height: 1.0;
 }
 
-button {
+.button {
     background: linear-gradient(325deg, rgba(182,245,190,1) 0%, rgba(96,219,208,1) 100%);
     border-radius: 8px;
     border: none;
     text-align: center;
     margin: 15px 15px 0 0;
     min-width: 100px;
-}
-
-button a {
     padding: 10px 15px;
-    display: inline-block;
+    display:inline-block;
 }
 
-button:hover {
+.button:hover {
     filter: saturate(2) brightness(0.90);
 }
 
-button:active {
+.button:active {
     transform: translateY(2px);
 }
 
