@@ -232,7 +232,7 @@ nav a:hover {
     margin: 35px;
 }
 
-.content > .portfolio {
+.content > .projects {
     display: flex;
     flex-direction: column;
 }
