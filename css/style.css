@@ -37,6 +37,11 @@ header {
 
 .logo {
     height: 33px;
+    transition: transform 1.7s cubic-bezier(.23,1,.32,1);
+}
+
+body.loaded .logo {
+    transform: rotate(1turn);
 }
 
 .logo-link {
