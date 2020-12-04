@@ -1,10 +1,14 @@
 const jump = document.querySelector('.jump');
 const header = document.querySelector('header');
 
-window.onscroll = function () {
+window.onscroll = function() {
     displayLink();
     displayShadow();
 };
+
+window.onload = function() {
+    document.body.className += " loaded";
+}
 
 function displayLink() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
