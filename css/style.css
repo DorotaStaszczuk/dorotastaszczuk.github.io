@@ -22,7 +22,9 @@ main {
 header {
     position: fixed;
     display: block;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
+    height: 66px;
     z-index: 99;
     transition: box-shadow 1000ms ease, -webkit-box-shadow 1000ms ease, -moz-box-shadow 1000ms ease;
     background-color: rgba(0,0,0,0.3);
@@ -50,11 +52,13 @@ body.loaded .logo {
     display: inline-block;
 }
 
-nav > ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 25px;
-    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 li {
@@ -356,6 +360,7 @@ footer a {
 
     .icons-container {
         width: 100vw;
+        max-width: 100%;
         position: relative;
         flex-direction: row;
         align-items: flex-start;
@@ -380,5 +385,50 @@ footer a {
     h2 {
         padding-top: 80px;
         padding-bottom: 50px;
+    }
+
+    .mobile {
+        display: inline-block;
+    }
+
+    nav ul {
+        text-align: center;
+        display: none;
+        position: static;
+    }
+
+    li {
+        padding: 15px;
+    }
+
+    .menu-link {
+        display: inline-block;
+        padding: 25px 70px;
+        cursor: pointer;
+    }
+
+    .logo-link {
+        margin: 15px 30px;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .menu-list {
+        z-index: 100;
+    }
+
+    nav div {
+        position: fixed;
+        top: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .header-scrolled div {
+        background-color: #d7e9e2;
+        box-shadow: 0px 11px 25px -14px rgba(0, 0, 0, 0.23);
     }
 }
