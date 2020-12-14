@@ -24,6 +24,11 @@ main {
     overflow-y: scroll;
 }
 
+main::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 header {
     position: fixed;
     display: block;
