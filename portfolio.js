@@ -2,6 +2,9 @@ const jump = document.querySelector('.jump');
 const header = document.querySelector('header');
 const menuLink = document.querySelector('.menu-link');
 const menuList = document.querySelector('.menu-list');
+const copyButton = document.querySelector('.copy-button');
+const email = document.querySelector('.email');
+let emailText = email.textContent;
 
 window.onload = function() {
     document.body.className += " loaded";
@@ -22,6 +25,10 @@ window.onclick = function(event) {
     }
 }
 
+copyButton.onclick = function() {
+    copyEmail();
+}
+
 function displayLink() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         jump.classList.remove('none');
@@ -40,4 +47,12 @@ function displayShadow() {
 
 function displayDropdown() {
     menuList.classList.toggle("show");
-  }
+}
+
+function copyEmail() {
+    navigator.clipboard.writeText(emailText).then(function() {
+        alert("Email copied");
+      }, function() {
+        alert("Email not copied");
+      });
+}
