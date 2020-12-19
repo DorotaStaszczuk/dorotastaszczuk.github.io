@@ -201,6 +201,10 @@ h1 {
     transform: translateY(2px);
 }
 
+.button:focus, button:focus, a:focus {
+    outline-color: #2a524b;
+}
+
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
