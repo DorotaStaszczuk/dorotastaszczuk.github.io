@@ -51,7 +51,7 @@ function displayDropdown() {
 
 function copyEmail() {
     navigator.clipboard.writeText(emailText).then(function() {
-        alert("Email copied");
+        alert("Email copied successfully");
       }, function() {
         alert("Email not copied");
       });
