@@ -2,7 +2,7 @@
 
 https://dorotastaszczuk.github.io/
 
-First version of my portfolio.
+Current version of my portfolio.
 
 ## General info
 
