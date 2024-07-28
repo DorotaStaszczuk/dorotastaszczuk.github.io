@@ -284,9 +284,18 @@ nav a:hover {
 .skills {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+.skills li {
+    list-style-type: circle;
+    display: list-item;
 }
 
 .skills-logo {
