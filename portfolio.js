@@ -13,7 +13,7 @@ window.onload = function() {
 window.onscroll = function() {
     displayLink();
     displayShadow();
-};
+}
 
 menuLink.onclick = function() {
     displayDropdown();
@@ -81,25 +81,29 @@ if ('IntersectionObserver' in window) {
     targets.forEach(target => observer.observe(target));
 
 
-let sectionCallback = (entries) => {
-    entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-      if (entry.intersectionRatio > 0.1) {
-        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-      } else {
-        document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-      }
-    });
-};
+    let sectionCallback = (entries) => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+        if (entry.intersectionRatio > 0.1) {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+        } else {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+        }
+        });
+    };
 
-let sectionOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-}
+    let sectionOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    }
 
     let sectionObserver = new IntersectionObserver(sectionCallback, sectionOptions);
 
     let sections = document.querySelectorAll('section[id]');
     sections.forEach((section) => sectionObserver.observe(section));
 }
+
+    const currentYear  = document.querySelector('.current-year');
+    const date = new Date();
+    currentYear.innerText = date.getFullYear();
